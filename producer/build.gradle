@@ -13,7 +13,6 @@ repositories {
 
 ext {
     junitJupiterApiVersion='5.7.0'
-    //jacksonVersion ='2.14.1'
 }
 
 dependencies {
@@ -29,9 +28,6 @@ dependencies {
 
     //      Database
     runtimeOnly 'org.postgresql:postgresql'
-
-    //      JsonObject
-    //implementation "com.fasterxml.jackson.core:jackson-databind:${jacksonVersion}"
 
     //      test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

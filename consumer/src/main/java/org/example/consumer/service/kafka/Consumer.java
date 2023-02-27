@@ -20,7 +20,8 @@ public class Consumer {
     private final JsonMapper jsonMapper;
     private final SimpleMapper simpleMapper;
 
-    @KafkaListener(topics = "message", groupId = "group_id")
+    @KafkaListener(topics = "${spring.kafka.topic}",
+            groupId = "${spring.kafka.consumer.group-id}")
     public void consume(String message) {
         log.info("consume(): {}", message);
         SimpleCreateRequest request = null;

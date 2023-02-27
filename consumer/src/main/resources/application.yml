@@ -3,6 +3,7 @@ server:
 ---
 spring:
   kafka:
+    topic: message
     consumer:
       bootstrap-servers: kafka:9092
       group-id: group_id
